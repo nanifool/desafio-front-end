@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* cores 
+#ffffff
+#f6f6f6
+#F5E5D9;
+#000000
+#272727
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5E5D9;
+    padding: 23px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    padding: 3px 8px;
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 3px solid transparent;
+}
+
+header a:hover {
+    color: #272727;
+    border-bottom: 3px solid #272727;
+}
+
+.menu-superior {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+

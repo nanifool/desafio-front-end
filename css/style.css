@@ -16,11 +16,13 @@
 */
 
 header {
+    width: auto;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #F5E5D9;
-    padding: 23px;
+    padding: 0 25px;
 }
 
 .logo {
@@ -56,3 +58,33 @@ header a:hover {
     text-transform: uppercase;
 }
 
+section {
+    display: flex;
+}
+
+.banner-top div {
+    width: 100%;
+    height: 830px;
+    background: url(../imgs/banner-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #272727;
+}
+
+.centro {
+    width: 100%;
+    height: 460px;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro div {
+    width: 186px;
+    height: 186px;
+    margin: 15px;
+    background: url(https://picsum.photos/200);
+    border-radius: 100px;
+}

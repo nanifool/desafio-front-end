@@ -3,13 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset-style.css">
         <link rel="stylesheet" href="css/style.css">
         <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
         <title>Logo - Os melhores preços em (produto)</title>
     </head>
 
     <body>
-        <header>
+        <header class="header-principal">
 
             <!-- Logo e menu de navegação superior -->
 
@@ -67,7 +69,7 @@
 
             <!-- Conteúdo principal à esquerda -->
 
-            <div class="principal">
+            <div class="conteudo-principal">
                 
                 <p>Vestibulum ante ipsum primis</p>
                 <h2>Lorem ipsum dolor sit amet</h2>
@@ -117,5 +119,65 @@
                 </p>
             </div>  
         </section>
+        <section class="destaque">
+
+            <div class="container-destaque">
+
+                <!-- conteúdo com uma imagem, botão e swiper -->
+
+                <div class="produto-destaque">
+
+                    <!-- imagem, conteúdo e botão -->
+                    <img src="https://picsum.photos/380/410" alt="produto destaque">
+
+                    <div class="conteudo-destaque">
+                        <p>
+                            Vestibulum ante ipsum primis
+                        </p>
+                        <h2>
+                            Lorem ipsum dolor sit amet
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia nunc ut ipsum 
+                            volutpat tempor. Aliquam sodales dapibus dolor. Nam pulvinar, turpis non condimentum lacinia,
+                            neque eros congue nulla, laoreet sodales odio neque et ex
+                        </p>
+                        <button>
+                            Call-to-action >
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="swiper">
+
+                    <!-- swiper com 3 imagens -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="https://picsum.photos/600/390" alt="produto x"></div>
+                          <div class="swiper-slide"><img src="https://picsum.photos/600/390" alt="produto y"></div>
+                          <div class="swiper-slide"><img src="https://picsum.photos/600/390" alt="produto z"></div>
+                        </div>
+
+                        <!-- setas -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- função para o swiper -->
+        <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+        </script>
     </body>
 </html>

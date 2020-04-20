@@ -11,17 +11,17 @@
 p {
     font-family: 'Playfair Display', serif;
     font-size: 16px;
-    padding-top: 10%;
+    margin: 5% 0;
 }
 
 h2 {
     font-size: 40px;
-    padding-top: 10%;
+    margin: 10% 0;
 }
 
 h3 { 
     text-align: center;
-    padding-top: 10%;
+    margin: 10% 0;
 }
 
 /* cores 
@@ -35,32 +35,33 @@ h3 {
 
 /* cabeçalho com logo, menu de navegação e botões de usuário */
 
-header {
-    width: auto;
+.header-principal {
+    width: 100%;
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #F5E5D9;
-    padding: 0 25px;
 }
 
-header ul li { list-style: none;}
+.logo { margin: 0 0 0 30px;}
 
-header ul {
+.header-principal ul li { list-style: none;}
+
+.header-principal ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header a {
+.header-principal a {
     padding: 3px 8px;
     text-decoration: none;
     color: #000000;
     border-bottom: 3px solid transparent;
 }
 
-header a:hover {
+.header-principal a:hover {
     color: #272727;
     border-bottom: 3px solid #272727;
 }
@@ -71,6 +72,8 @@ header a:hover {
     text-align: center;
     text-transform: uppercase;
 }
+
+.campo-user { margin: 0 30px 0 0;}
 
 /* banner principal */
 
@@ -114,13 +117,13 @@ section { display: flex;}
     position: relative;
 }
 
-.principal {
+.conteudo-principal {
     width: 32%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding-right: 8%;
+    margin-right: 8%;
 }
 
 /* primeiro banner */
@@ -186,4 +189,82 @@ section { display: flex;}
     text-align: center;
     vertical-align: middle;
     margin: 0 5% 0 5%;
+}
+
+/* produto destaque com swiper */
+
+.destaque {
+    width: 100%;
+    height: 1150px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10%;
+}
+
+.container-destaque {
+    width: 87%;
+    height: 49%;
+    background-color: #F5E5D9;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.produto-destaque {
+    width: 680px;
+    height: 465px;
+    display: flex;
+    margin: 3%;
+    position: absolute;
+    top: 2%;
+}
+.conteudo-destaque {
+    margin-left: 2%;
+}
+
+.container-destaque button {
+    width: 250px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: black;
+    color: #ffffff;
+}
+
+.container-destaque button:hover {
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #000000;
+}
+
+.swiper {
+    position: absolute;
+    left: 66%;
+}
+
+.swiper-container {
+    width: 540px;
+    height: 360px;
+ }
+
+.swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+ }
+
+:root {
+    --swiper-navigation-size: 25px;
+    --swiper-navigation-color: #F5E5D9
 }

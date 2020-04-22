@@ -14,6 +14,7 @@ p {
 
 h1 {
     font-size: 44px;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -24,6 +25,12 @@ h2 {
 h3 { 
     text-align: center;
     margin: 10% 0;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 10%
 }
 
 /* cores 
@@ -327,4 +334,127 @@ section { display: flex;}
     width: 380px;
     height: 410px;
     margin-left: 14%;
+}
+
+/* logo footer */
+
+.logo-footer {
+   height: 40px;
+   width: 100%;
+}
+
+.logo-footer h1 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*
+
+.logo-footer p:before, 
+.logo-footer p:after {}
+
+*/
+
+/* rodape */
+
+.rodape {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #272727;
+    color: #F5E5D9;
+    position: relative;
+}
+
+
+.menu-esquerdo {
+    display: flex;
+    flex-flow: column wrap;
+    width: 150px;
+    height: 120px;
+    align-self: center;
+}
+
+.menu-esquerdo nav {
+    display: flex;
+}
+
+.menu-esquerdo a {
+    margin: 2% 0;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap:  wrap;
+}
+
+.menu-esquerdo ul {
+    margin: 2% 0;
+    display: flex;
+    flex-wrap:  wrap;
+}
+
+.menu-esquerdo ul li {
+    margin: 2% 0;
+}
+
+.menu-esquerdo a:hover {
+    text-decoration: underline;
+    color: #F5E5D9;
+}
+
+.email {
+    display: flex;
+    flex-flow: column wrap;
+    width: 400px;
+    height: 120px;
+    align-self: center;
+    margin: 5%;
+    position: relative;
+}
+
+.email input {
+    background-color: #272727;
+    border-width: 0 0 2px 0;
+}
+
+.email button {
+    background-color: #272727;
+    padding: 0;
+    width: 60px;
+    position: absolute;
+    color: white;
+    border: 0;
+    bottom: 30%;
+    right: 1%;
+    text-transform: uppercase;
+}
+
+.menu-social {
+    display: flex;
+    flex-flow: column wrap;
+    width: 150px;
+    height: 120px;
+    align-self: center;
+}
+
+.menu-social i {
+    color: #F5E5D9;
+    text-align: center;
+}
+
+.menu-social a {
+    margin-bottom: 4%;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+}
+
+.copyright p {
+    color: #F5E5D9;
 }

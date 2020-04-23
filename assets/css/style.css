@@ -81,7 +81,9 @@ h4 {
     text-transform: uppercase;
 }
 
-.campo-user { margin: 0 30px 0 0;}
+.campo-user { margin: 0 30px 0 0; }
+
+.campo-user a { font-size: 20px; }
 
 /* banner principal */
 
@@ -111,7 +113,7 @@ section { display: flex;}
     height: 186px;
     margin: 15px;
     background: url(https://picsum.photos/200);
-    border-radius: 100px;
+    border-radius: 100%;
 }
 
 /*  section com texto principal à esquerda e 3 imagens à direita */
@@ -232,6 +234,7 @@ section { display: flex;}
 }
 
 .container-destaque button {
+    margin-top: 15%;
     width: 250px;
     height: 60px;
     border: 2px solid black;
@@ -419,6 +422,7 @@ section { display: flex;}
 .email input {
     background-color: #272727;
     border-width: 0 0 2px 0;
+    color: #f5e5d9;
 }
 
 .email button {
